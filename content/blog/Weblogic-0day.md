@@ -1,6 +1,6 @@
 ---
 title: Weblogic 0day 复现
-date: 2017-12-22 15:43:02
+date: 2017-12-21 15:43:02
 tags: [vul,sec,weblogic,0day]
 categories: Security
 ---
@@ -18,8 +18,8 @@ categories: Security
 docker-compose build
 docker-compose up -d
 ```
-此时会创建并运行两个容器，分别是`vulhub/weblogic`和`vulhub/weblogic`,
-如下图
+此时会创建并运行两个容器，分别是`vulhub/weblogic`和`vulhub/weblogic`, 如下图
+
 ![containers](https://ob5vt1k7f.qnssl.com/gbF5V)
 
 访问7001端口，weblogic已经成功运行
@@ -57,6 +57,7 @@ docker-compose up -d
 <faultstring>0</faultstring>
 ```
 说明执行成功
+
 ![response](https://ob5vt1k7f.qnssl.com/yn2qT)
 ![reverse shell](http://ob5vt1k7f.qnssl.com/YOZ6L)
 
